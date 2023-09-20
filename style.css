@@ -1,0 +1,226 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.box-degrade3{
+    width: 100%;
+    padding: 300px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient( to left, rgb(3, 3, 143), rgb(77, 4, 145), rgb(3, 99, 128), rgb(166, 210, 216), rgb(167, 4, 4), red);
+    background-size: 500% 100%;
+    animation: background-animation 3s infinite alternate ;
+}
+
+.box-degrade2{
+    width: 100%;
+    padding: 300px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient( to left, rgb(3, 3, 143), rgb(77, 4, 145), rgb(3, 99, 128), rgb(166, 210, 216), rgb(167, 4, 4), red);
+    background-size: 500% 100%;
+    animation: background-animation 3s infinite alternate ;
+}
+.box-degrade{
+    width: 100%;
+    padding: 300px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient( to left, rgb(3, 3, 143), rgb(77, 4, 145), rgb(3, 99, 128), rgb(166, 210, 216), rgb(167, 4, 4), red);
+    background-size: 500% 100%;
+    animation: background-animation 3s infinite alternate ;
+}
+
+@keyframes background-animation {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 100%;
+    }
+}
+.center{
+    display: flex;
+    flex-wrap:wrap ;
+    max-width: 1200px;
+    margin: -300px;
+    padding: 0 2%;
+    
+}
+
+html,body{
+    height: 100%;
+    overflow: hidden;
+    overflow-x:hidden; 
+}
+header{
+    height: 200px;
+    padding: 30px 0;
+}
+
+.logo{
+    width: 50%;
+}
+
+.menu{
+    padding-top: 30px;
+    width: 50%;
+    text-align:right ;
+}
+
+.menu a{
+    color: black;
+    text-decoration: double;
+    font-weight: bold;
+    margin: 15px;
+    position: relative;
+}
+
+.menu a::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.menu a:hover::after{
+    width: 100%;
+
+
+}
+
+selection.sobre{
+    height: calc(100% - 200px);
+    position: relative;
+
+}
+
+.extras{
+    position: absolute;
+    bottom: -250px;
+    right: -200px;
+    width: 800px;
+    height: 700px;
+    border-radius: 50%;
+    background-color: rgb(0 16 60);
+}
+
+li.item-menu a .icon{
+    position: absolute;
+    font-size: 50px;
+    right: 1400px;
+    top: 340px;
+    color: rgb(51, 255, 0);
+}
+
+.texto-sobre{
+    position: absolute;
+    margin-top: 225px;
+    margin-left: -550px;
+    
+}
+
+.texto-sobre h1{
+    font-size: 30px;
+}
+
+.texto-sobre h2{
+    font-size: 14px;
+    margin: 20px 0;
+    color: black;
+    font-weight: bold;
+    max-width: 800px;
+    text-decoration-color: white;
+}
+
+body h3{
+    text-align: center;
+    font-size: 40px;
+}
+
+.container{
+    max-width: 1280px;
+    margin: -200px;
+}
+
+form{
+    background-color: beige;
+    max-width: 500px;
+    height: 450px;
+    padding: 100px;
+    border-radius: 40px;
+}
+
+form h1{
+    text-align: center;
+    margin: -30px 0;
+    font-size: 30px;
+    color: blue;
+}
+
+form p{
+    text-align: center;
+    margin: 40px 0;
+}
+
+body .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inupt-single{
+    left: -60px;
+    position: relative;
+    margin: 35px 0;
+
+}
+
+.inupt-single label{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    transition: all 0.2s;
+    cursor: text;
+}
+
+.input {
+    background-color: beige;
+    width: 150%;
+    border: 0;
+    border-bottom: 1px solid #32363d;
+    padding: 5px;
+    font-size: 17px;
+    outline: 0;
+}
+
+form .inupt-single .input:focus ~ label,
+form .inupt-single .input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 12px;
+    color: beige;
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+}
+
+form input[type=submit]{
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
